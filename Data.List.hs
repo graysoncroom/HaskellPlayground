@@ -1,3 +1,3 @@
-nub :: [a] -> [a]
-nub [] = []
-nub (x:xs) = x : nub $ filter (/= x) xs
+nub' :: [a] -> [a]
+nub' [] = []
+nub' (x:xs) = x : nub' $ filter (/= x) xs
